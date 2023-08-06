@@ -1,0 +1,210 @@
+html *{
+    font-family: 'Harry Potter', sans-serif; 
+    text-decoration: none;
+    color: black;  
+}
+html{
+  scroll-behavior: smooth;
+}
+.container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.hr1{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+
+}
+
+body#body {
+    position: relative;
+    background-color: white;
+}
+
+body#body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('harry-potter-shopping.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1; 
+}
+
+.fonted-h1{
+    font-size: 500%;
+    text-align: center;     
+                    
+}          
+.fonted-h2{                                      
+    font-size: 300%;
+    text-align: center; 
+    margin-top: -50px;
+}     
+.fonted-{
+    font-size: 250%;
+    text-align: center; 
+}
+th, td {
+    text-align: center;
+    padding: 15px;
+    border-radius: 40px;
+
+}
+th:hover{
+  border-radius: 10px;
+
+}
+.book-bg1 {
+    background-image: url('sorcerers\ stone.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    opacity: 60%;
+    transition: opacity 0.3s;
+    background-repeat: round;
+    
+
+}
+
+.book-bg2 {
+    background-image: url('chamber.jpg');
+    background-size: cover;
+    height: 500px;
+    opacity: 60%;
+    transition: opacity 0.3s;
+    background-repeat: round;
+
+}
+
+.book-bg3 {
+    background-image: url('azkaban.jpg');
+    background-size: contain;
+    background-repeat: round;
+    height: 500px;
+    opacity: 60%;
+    transition: opacity 0.3s;
+  
+}
+.books {
+    display: flex;
+    justify-content: space-around; /* This will evenly space out your tables */
+    
+    
+}
+
+table {
+    width: 30%; /* You can adjust this as per your needs */
+    margin-left: 00px; /* Added some margin around the tables for better visibility */
+    
+}
+.price{
+    font-size: 20px;
+    color:black;
+}
+.book-bg1:hover, .book-bg2:hover, .book-bg3:hover {
+    opacity: 100%;
+    
+}
+
+.book1table, .book2table, .book3table{
+    width: 33vw;
+    height: 100px;   
+    
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: px;
+  z-index: 9999;
+}
+
+li {
+  float: left;
+  width: 33%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.socialimg{
+    height:40px;
+    width:40px;
+}
+#social{
+    text-align: center;
+}
+.cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
